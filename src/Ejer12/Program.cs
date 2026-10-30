@@ -1,14 +1,12 @@
 ﻿//Ivertir el numero
-int numero ,invertido=0, digito;
+int numero ,invertido, dig1, dig2;
 Console.Write("Ingrese un numero: ");
 numero = Convert.ToInt32(Console.ReadLine());
-// proceso
 
-while (numero > 0)
-{
-    digito = numero % 10;
-    invertido = invertido * 10 + digito;
-    numero = numero / 10;
-}
+// proceso
+dig1 = numero / 10;
+dig2 = numero % 10;
+invertido = dig2 * 10 + dig1;
+
 Console.Write($"El numero invertido es: {invertido}");
 
